@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            NavigationLink(destination: BasicList()) {
+                Text("Second Page")
+                    .frame(minWidth: 0, maxWidth: 300)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint:.trailing))
+                    .cornerRadius(40)
+                    .font(.title)
+                    .navigationTitle("Main Page")
+            }
+        }
     }
 }
 

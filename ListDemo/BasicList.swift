@@ -20,6 +20,7 @@ struct BasicList: View {
                     Text("List 6")
                     Text("List 7")
                     Text("List 8")
+                    Text("List 9")
                 }
             }
         }
